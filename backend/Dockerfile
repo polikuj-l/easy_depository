@@ -1,7 +1,5 @@
 FROM python:3.13.1-slim
-
-COPY requirements.txt requirements.txt 
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-
 COPY . .
 CMD ["python", "main.py"]
